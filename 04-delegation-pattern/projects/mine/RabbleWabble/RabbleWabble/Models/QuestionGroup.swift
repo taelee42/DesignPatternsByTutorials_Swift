@@ -26,9 +26,9 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
+import Foundation
 
-public class QuestionGroupCell: UITableViewCell {
-  @IBOutlet public var titleLabel: UILabel!
-  @IBOutlet public var percentageLabel: UILabel!
+public struct QuestionGroup {
+  public let questions: [Question]
+  public let title: String
 }
